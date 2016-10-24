@@ -18,6 +18,13 @@
     document.querySelector('.dice aside:last-child').innerText = dice.diceRoll();
 
 
+    dieNumOne = parseInt(document.querySelector('.dice aside:first-child').innerText);
+    dieNumTwo = parseInt(document.querySelector('.dice aside:last-child').innerText);
+
+    function sum (x, y) {
+      return x+y;
+    }
+    console.log(dieNumOne + dieNumTwo);
 
   });
 
@@ -28,17 +35,24 @@
     diceRoll: function diceRoll() {
       return Math.ceil(Math.random() * 6)
     }
-
   }
-  var now= new Date();
-  var today = new Date('' + now.getFullYear() + (now.getMonth() + 1) + now.getDay());
 
 
 
-  console.log(dice.diceRoll());
-  console.log ( '' + now.getFullYear() + (now.getMonth() + 1) + now.getDay());
 
+  // var janOne = new Date('01/01/2016');
+  //
+  // var timeDiff = now.getTime() - janOne.getTime();
 
+  // var now= new Date();
+  // var today = new Date('' + now.getFullYear() + (now.getMonth() + 1) + now.getDay() + now.getTime(), (timeDiff / 1000/ 60/ 60/ 24) );
+  //
+  //
+  //
+  // console.log(dice.diceRoll());
+  // console.log ( '' + now.getFullYear() + (now.getMonth() + 1) + now.getDay());
+  //
+  //
 
 
 
