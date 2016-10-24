@@ -28,10 +28,17 @@
     diceRoll: function diceRoll() {
       return Math.ceil(Math.random() * 6)
     }
-  }
-  console.log(dice.diceRoll());
 
-  
+  }
+  var now= new Date();
+  var today = new Date('' + now.getFullYear() + (now.getMonth() + 1) + now.getDay());
+
+
+
+  console.log(dice.diceRoll());
+  console.log ( '' + now.getFullYear() + (now.getMonth() + 1) + now.getDay());
+
+
 
 
 
