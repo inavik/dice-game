@@ -10,8 +10,14 @@
     var dieNumOne = document.querySelector('.dice aside:first-child').innerText;
     console.log(dieNumOne);
 
+    document.querySelector('.dice aside:first-child').innerText = dice.diceRoll();
+
     var dieNumTwo = document.querySelector('.dice aside:last-child').innerText;
     console.log(dieNumTwo);
+
+    document.querySelector('.dice aside:last-child').innerText = dice.diceRoll();
+
+
 
   });
 
@@ -23,8 +29,9 @@
       return Math.ceil(Math.random() * 6)
     }
   }
-
   console.log(dice.diceRoll());
+
+  
 
 
 
